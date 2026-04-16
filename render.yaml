@@ -18,12 +18,12 @@ services:
     runtime: static
     rootDir: client
     buildCommand: npm install && npm run build
-    staticPublishDir: dist
+    staticPublishPath: ./dist
     envVars:
       - key: VITE_BACKEND_URL
         fromService:
           name: logiclayer-server
           type: web
-          property: host
+          property: url
       - key: VITE_PISTON_API_URL
         value: https://emkc.org/api/v2/piston
