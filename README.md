@@ -8,6 +8,12 @@
 
 ---
 
+### 🌐 [Live Demo: LogicLayer Platform](https://logiclayer-1.onrender.com)
+*   **Frontend**: [logiclayer-1.onrender.com](https://logiclayer-1.onrender.com)
+*   **Backend Server**: [logiclayer-server.onrender.com](https://logiclayer-server.onrender.com)
+
+---
+
 ## 🚀 Core Functional Pillars
 
 ### ⚡ Real-Time Synergy
