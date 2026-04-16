@@ -1,0 +1,34 @@
+services:
+  server:
+    container_name: logiclayer-server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+      target: runner
+    volumes:
+      - ./server:/app
+      - /build/node_modules
+    networks:
+      - LogicLayer-Net
+    ports:
+      - "3000:3000"
+
+  client:
+    container_name: logiclayer-client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      target: runner
+    volumes:
+      - ./client:/app
+      - /build/node_modules
+    networks:
+      - LogicLayer-Net
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server
+
+networks:
+  LogicLayer-Net:
+    driver: bridge
