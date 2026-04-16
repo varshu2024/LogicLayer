@@ -24,6 +24,6 @@ services:
         fromService:
           name: logiclayer-server
           type: web
-          property: url
+          property: host
       - key: VITE_PISTON_API_URL
         value: https://emkc.org/api/v2/piston
